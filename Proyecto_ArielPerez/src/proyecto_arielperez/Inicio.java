@@ -25,6 +25,8 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+        this.setTitle("Inicio");
+        this.setLocationRelativeTo(this);
     }
 
     /**
