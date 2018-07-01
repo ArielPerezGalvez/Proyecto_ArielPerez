@@ -28,6 +28,7 @@ public class Inicio extends javax.swing.JFrame {
         this.setTitle("Inicio");
         this.setLocationRelativeTo(this);
         eliminar_caracter.add(",");
+        //eliminar_caracter.add(" ");
         eliminar_caracter.add(".");
         eliminar_caracter.add(" ");
         eliminar_caracter.add("?");
@@ -344,8 +345,40 @@ public class Inicio extends javax.swing.JFrame {
                         d = lineas.get(1) + " " + lineas.get(3) + " " + lineas.get(2);
                         al2.add(d);
                         ac2.add(1);
+                    } else if (lineas.size() == 3) {
+                        String d = "";
+                        d = "";
+                        d = lineas.get(0) + " " + lineas.get(1);
+                        al2.add(d);
+                        ac2.add(1);
+                        d = "";
+                        d = lineas.get(0) + " " + lineas.get(2);
+                        al2.add(d);
+                        ac2.add(1);
+                        d = "";
+                        d = lineas.get(1) + " " + lineas.get(2);
+                        al.add(d);
+                        ac.add(1);
+                        d = "";
+                        d = lineas.get(0) + " " + lineas.get(1) + " " + lineas.get(2);
+                        al2.add(d);
+                        ac2.add(1);
+
+                    } else if (lineas.size() == 2) {
+                        String d = "";
+                        d = "";
+                        d = lineas.get(0) + " " + lineas.get(1);
+                        al.add(d);
+                        ac.add(1);
+                    } else if (lineas.size() == 1) { //Distribucion normal
+                        String d = "";
+                        d = "";
+                        d = lineas.get(0);
+                        al.add(d);
+                        ac.add(1);
                     }
                 }
+
                 JOptionPane.showMessageDialog(this, "Aprete ahora el siguiente boton para modificarlo");
             } catch (Exception e) {
                 e.printStackTrace();
@@ -429,16 +462,24 @@ public class Inicio extends javax.swing.JFrame {
                 if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Inicio.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
