@@ -27,6 +27,19 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Inicio");
         this.setLocationRelativeTo(this);
+        eliminar_caracter.add(",");
+        eliminar_caracter.add(".");
+        eliminar_caracter.add(" ");
+        eliminar_caracter.add("?");
+        eliminar_caracter.add("!");
+        eliminar_caracter.add("'");
+        eliminar_caracter.add(";");
+        eliminar_caracter.add(":");
+        eliminar_caracter.add("#");
+        eliminar_caracter.add("$");
+        eliminar_caracter.add("*");
+        eliminar_caracter.add("-");
+        eliminar_caracter.add("|");
     }
 
     /**
@@ -447,6 +460,7 @@ public class Inicio extends javax.swing.JFrame {
     ArrayList<Integer> ac = new ArrayList();
     ArrayList<String> al2 = new ArrayList();
     ArrayList<Integer> ac2 = new ArrayList();
+    ArrayList<String> eliminar_caracter = new ArrayList();
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
