@@ -371,7 +371,7 @@ public class Inicio extends javax.swing.JFrame {
                         d = lineas.get(0) + " " + lineas.get(1);
                         al.add(d);
                         ac.add(1);
-                    } else if (lineas.size() == 1) { //Distribucion normal
+                    } else if (lineas.size() == 1) { 
                         String d = "";
                         d = "";
                         d = lineas.get(0);
