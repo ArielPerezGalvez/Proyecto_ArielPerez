@@ -248,6 +248,7 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        //que bueno que termine 
         JOptionPane.showMessageDialog(this, "Es hora de agregar un archivo que desees modificar con nosotros");
         acumuladas.clear();
         Cont.clear();
