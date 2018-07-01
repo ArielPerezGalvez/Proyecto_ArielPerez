@@ -258,6 +258,8 @@ public class Inicio extends javax.swing.JFrame {
         al2.clear();
         ac2.clear();
         area.setText("");
+        area2.setText("");
+        area3.setText("");
         JFileChooser FC = new JFileChooser();
         FileNameExtensionFilter TEXTFILTER = new FileNameExtensionFilter("Archivos de Texto", "txt");
         FC.setFileFilter(TEXTFILTER);
